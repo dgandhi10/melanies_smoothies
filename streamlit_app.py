@@ -3,7 +3,6 @@ import streamlit as st
 import requests  
 from snowflake.snowpark.functions import col
 
-
 # Write directly to the app
 st.title("My Parents New Healthy Diner")
 st.write(""" Choose the fruits you want in your custom Smoothie! """)
@@ -49,5 +48,5 @@ if ingredients_list:
 #my_orders = session.table("smoothies.public.orders")
 #st.write(my_orders)
 
-smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")
 st.text(smoothiefroot_response)
